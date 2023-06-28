@@ -1,0 +1,895 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
+
+  
+ 
+  @import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+ /* --------------------------------MENU LATERAL------------------------------ */
+
+ body{
+    background-color: black;
+    color: white;
+ }
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #Ff0077;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: scroll;
+    padding-left: 5px;
+   
+    
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    
+    
+}
+
+.btn-expandir > i{
+    color:  #Ff0077;
+    font-size: 50px;
+    padding-left: 5px;
+    cursor: pointer;
+
+
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: 1s;
+}
+
+ul li.ativo{
+    background-color: #392b3888;
+}
+
+ul li.item-menu:hover{
+    background-color: #ff007796 ;
+    
+}
+
+ul li.item-menu a:hover{
+    transition: 1s;
+}
+
+ul li.item-menu a{
+    color: #Ff0077;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .text-link{
+    margin-left: 40px;
+}
+
+ul li.item-menu a .im{
+    width: 40px;
+}
+
+::-webkit-scrollbar{
+    background-color: #000000;
+    width: 5px;
+
+    
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #Ff0077;
+    
+}
+
+ /* ---------------------------------------cabeçalho---------------------------------------------- */
+ .container{
+   
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    /* background-color: red; */
+    justify-content: space-between;
+}
+
+.esquerda{
+   
+    /* z-index: 10; */
+    /* z-index: 100; */
+    margin: 10px;
+    /* background-color: aqua; */
+}
+
+.direita{
+    
+    align-items: center;
+    justify-content:space-evenly;
+    display: flex;
+    flex-direction: row;
+    /* background-color: blueviolet; */
+    width: 25%;
+    
+
+}
+
+.entrar{
+    
+    font-size: 30px;
+    background-color:#FF0077;
+    color: rgb(255, 255, 255);
+    border-radius: 80px ;
+    padding: 10px 30px 10px 30px;
+    font-family: 'Bellota Text', cursive;
+}
+.level{
+    margin: 10px;
+    display: flex;
+    margin-left: 90px;
+    width: 4%;
+    position: fixed;
+    
+}
+.levela{
+
+    margin: 10px;
+    display: flex;
+    margin-left: 90px;
+    width: 13%;
+   
+    
+}
+
+/* ----------------------------------------capa----------------------------------------  */
+
+#form{
+    background-image: url(ims/form.png);
+    background-position: center center;
+    background-size: cover;
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 95%;
+    height: 10cm;
+    
+}
+
+
+/* ________________________Alinhar as Divs de descrição e mapa______________________________ */
+
+.geral{
+    display: flex;
+    margin: 120px;
+    padding: 20px;
+    width: 90%;
+}
+
+.left{
+    width: 50%;
+    height: 200px;
+    display: inline-block;
+}
+
+.right{
+   width: 50%;
+margin-top: 3.5%;
+}
+
+.descricao{
+    font-size: 20px;
+    text-align:left;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.descricao1{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.ios{
+    color: #Ff0077;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top{
+    margin-left: 200px;
+}
+
+/* --------------------------------------Carrinho----------------------------------- */
+
+.shopping-cart .sum-prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#sum-prices {
+    padding-left: 5px;
+}
+
+.sum-prices h6 {
+    font-size: 0.9rem;
+}
+
+.shoppingCartButton {
+    cursor: pointer;
+}
+
+.shoppingCartButton:hover,
+.account:hover * {
+    color: #0e5e53;
+}
+
+.producstOnCart {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+    background-color: #000000;
+    width: 300px;
+    height:100%;
+    color: #f0f0f0;
+    z-index: 15;
+    position: fixed;
+    top:1px;
+    right: 0;
+    text-align: center;
+    animation: fade 1s;
+}
+
+.closeButton{
+    cursor: pointer;
+}
+
+.producstOnCart::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes fade {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+.producstOnCart::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.hide {
+    display: none;
+    visibility: none;
+}
+
+.producstOnCart ul {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.producstOnCart .buyItem {
+    border-bottom: #aaa 1px solid;
+    width: 90%;
+    padding: 10px 0;
+    display: flex;
+  
+}
+
+.producstOnCart img {
+    width: 90px;
+}
+
+.producstOnCart .top {
+    display: flex;
+    background-color: #616161;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.top button {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#top-cart{
+    background-color: #Ff0077;
+    height: 7%;
+    position: absolute;
+    right: 0;
+}
+
+
+#top-cart button:hover {
+   
+    cursor: pointer;
+}
+
+#top-cart h3 {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.producstOnCart > .checkout {
+    font-size: 0.9rem;
+    margin: 20px auto;
+    border: none;
+    background-color: #FF0077;
+    padding: 10px 20px;
+    color: #eee;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.overlay {
+    overflow: hidden;
+    display: inline-block;
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+   
+}
+
+.stopScrolling {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.buyItem{
+    position: absolute;
+    top:0;
+   margin-top: 20%;
+}
+
+#buyItems{
+    height: 81%;
+}
+
+
+.buyItem h6 {
+    margin-bottom: 10px;
+}
+
+.buyItem button {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 0 15px;
+    border: none;
+}   
+
+.buyItem button:active {
+    color: #96c8cc;
+}
+
+.buyItem > div {
+    padding: 0 20px;
+}
+
+.producstOnCart .empty {
+    justify-self: center;
+    margin: 150px auto;
+}
+
+.cifrao{
+    position: absolute;
+    top: 30%;
+    right:55%;
+}
+
+.price {
+    width: 10%;
+    height: 60px;
+    font-size: 20px;
+    margin: 25px;
+    border: none;
+    background-color: #Ff0077;
+    color: rgb(255, 255, 255);
+    box-shadow: -1px 1px 10px black;
+    border-radius: 5px;
+    position: absolute;
+    top:110%;
+    left:30%;
+    font-family: 'Raleway', sans-serif; 
+    text-align: center;
+
+}
+
+.priceValue{
+    position: absolute;
+    top: 30%;
+    right:23%;
+}
+
+.cart-quantity {
+    color: rgb(255, 255, 255);
+    background-color:#FF0077;
+    padding: .2em .3em;
+    position: absolute;
+    margin:  -4em 17em 0;
+    right: 0;
+    border: solid 2px #FF0077;
+    border-radius: 5px;
+    font-weight: bolder;
+  }
+
+  .product-image{
+    display: none;
+  }
+
+  .addToCart{
+    width: 20%;
+    height: 60px;
+    font-size: 20px;
+    margin: 25px;
+    border: none;
+    background-color: #Ff0077;
+    color: rgb(255, 255, 255);
+    box-shadow: -1px 1px 10px black;
+    border-radius: 5px;
+    position: absolute;
+    top:110%;
+    left:9%;
+    font-family: 'Raleway', sans-serif; 
+cursor: pointer;
+  }
+  
+
+/* --------------------------------------select----------------------------------- */
+
+
+.box {
+    position: absolute;
+right: 45%;
+bottom: -107%;
+  }
+
+ 
+  
+  .box select {
+    background-color:#000000;
+    color: white;
+    padding: 12px;
+    width: 250px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+  }
+
+  .box ::after {
+    content: "\f13a";
+    font-family: FontAwesome;
+ }
+  
+  .box::before {
+    content: "\f13a";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: #Ff0077;
+    background-color: rgba(39, 22, 22, 0.1);
+    pointer-events: none;
+  }
+  
+  .box:hover::before {
+    color: #FF0077;
+    background-color: rgba(71, 69, 69, 0.2);
+  }
+  
+  .box select option {
+    padding: 30px;
+  }
+
+option :hover {
+    background-color:rgba(34, 34, 34, 0.1); 
+  }
+ 
+
+
+
+/*----------------- carrossel----------------- */
+
+
+.conteiner{
+
+    height: 600px;
+    width: 160vh;
+    overflow: hidden;
+    position: absolute;
+    top: 250%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .navegacao{
+      position: absolute;
+      bottom: 20px;
+      left:40%;
+      transform: translate(-50%);
+      display: flex;
+  
+  }
+  
+  .bar{
+    width: 30px;
+    height: 5px;
+    margin: 6px;
+    background: #Ff0077;
+    transition: 0.3s;
+  }
+  
+  .bar:hover {
+    background: rgb(0, 0, 0);
+  
+  }
+  input {
+    display: none;
+  }
+  .imagens {
+
+    display: flex;
+    height: 100%;
+    width: 600%;
+    
+  }
+  
+  .imagem {
+   width: 16.6666666667%;
+   transition: 0.5s;
+  }
+  .imagem .carrocel{
+    width: 80%;
+    
+  }
+  
+  #imagem1:checked ~.img1 {
+    margin-left: 0 ;
+    
+  }
+  
+  #imagem2:checked ~.img1 {
+    margin-left: -16.6666666667%;
+  
+  }
+  
+  #imagem3:checked ~.img1{
+    margin-left: -33.3333333334%;
+  }
+  
+  #imagem4:checked ~.img1 {
+     margin-left: -50.0000000001%;
+  }
+  
+  #imagem5:checked ~.img1 {
+    margin-left: -66.6666666668%;
+  }
+  
+  #imagem6:checked ~.img1 {
+    margin-left: -83.3333333335 ;
+  }
+
+  /* ------------------ CARREGAMENTO UP ------------------*/
+
+
+* {
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  div.pre-carregamento {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    transition: 1.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  div.fish {
+    width: 10px;
+}
+  
+  
+ 
+
+/*----------------------------- FOOTEER---------------------------------- */
+
+
+
+footer {
+ 
+    bottom: 0vh;
+    margin-top: 110vh;
+    width: 100%;
+    /* background-image: linear-gradient(to right, #e8175d, #cc527a); */
+}
+
+footer li{
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+footer h2{
+    font-size: 2rem;
+}
+
+footer .links,.copy {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    align-self: center;
+    font-family: 'Red Rose', cursive;
+}
+
+footer a,footer ol {
+    color: white;
+    text-decoration: none;
+}
+
+#redes {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20%;
+}
+
+#redes:hover{
+    background-color: #080808;
+    transition: 0.5s;
+}
+
+.copy {
+    background-image: linear-gradient(to left, #260016, #FF0077);
+    width: 100%;
+    border-top-left-radius: 50%;
+}
+
+.logo {
+    font-family: 'Simply Rounded', sans-serif;
+    color: white;
+    font-size: 4rem;
+    text-transform: capitalize;
+    transition: all 2s;
+}
+
+.copy p {
+    font-weight: 500;
+}
+
+#up {
+    color: #FF0077;
+}
+
+/* -------------Menu responsivo---------------- */
+.menuzinho{
+    width: 100%;
+    display: none;
+ }
+
+
+ /*-------------------------------------BOTAO DE TOOPO----------------------------- */
+
+ .go-top-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    background: #000000;
+    border: 2px solid #FF0077;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .go-top-btn img {
+    width: 40px;
+    height: 40px;
+  }
+
+
+
+
+@media (max-width: 768px) {
+
+    body{
+        /* background-color: gray; */
+        display: grid;
+        margin: 0;
+        padding: 0;
+      
+      
+    }
+
+     .level{          /*Logo up  */
+        margin: 0;
+        width: 20%;
+        padding: 0;
+     }
+
+     .container{
+        width: 70%;
+        
+    }
+    .geral{
+        display: flex;
+        margin: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    
+
+    .container{
+        width: 80%;
+    }
+    
+    .levela{
+        margin-top: 30px;
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .entrar{
+        margin-top: 20px;
+        
+    }
+
+    .direita{
+        margin-right: 40px;
+    }
+
+
+    
+    .conteudo{
+        margin: 0;
+
+      }
+
+
+    .sha{
+        margin: 0;
+        
+    }
+
+    #capa{
+        height: 200px;
+        margin: 0;
+    }
+
+    .papa{
+        margin-bottom: 100px;
+    }
+
+    .menu-lateral, footer{
+        display: none;
+    }
+
+
+    .menuzinho{
+
+        padding: 0;
+        bottom: 0vh;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        background-color: #000;
+       
+    }
+    
+
+    .levela{
+        width: 50%;
+    }
+
+    .descricao{
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        text-align: justify;
+        
+    }
+
+    .descricao1{
+        width: 100%;
+        font-size: 20px;
+        
+    }
+
+    #form{
+        width: 100%;
+        height: 200px;
+        margin: 0;
+        
+    }
+
+    .imagem,.carrocel, .ulala, .navegacao, .menu-lateral, .footer {
+        display: none;
+    }
+
+    .emagem{
+        margin: 0;
+        width: 50px;
+        margin-left: 16px;
+    }
+
+    
+}
+
+
+
+
+
+ 
