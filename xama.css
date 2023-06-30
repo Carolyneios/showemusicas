@@ -436,8 +436,8 @@ margin-top: 3.5%;
     box-shadow: -1px 1px 10px black;
     border-radius: 5px;
     position: absolute;
-    top:110%;
-    left:30%;
+    top:100%;
+    left:75rem;
     font-family: 'Raleway', sans-serif; 
     text-align: center;
 
@@ -469,17 +469,16 @@ margin-top: 3.5%;
     width: 20%;
     height: 60px;
     font-size: 20px;
-    margin: 25px;
+    
     border: none;
     background-color: #Ff0077;
     color: rgb(255, 255, 255);
     box-shadow: -1px 1px 10px black;
     border-radius: 5px;
     position: absolute;
-    top:110%;
-    left:9%;
+    left:70rem;
     font-family: 'Raleway', sans-serif; 
-cursor: pointer;
+    cursor: pointer;
   }
   
 
